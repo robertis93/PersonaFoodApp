@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PersonaFoodApp</string>
+    <string name="bell_ringing">bell ringing</string>
+    <string name="qrcode">QRCode</string>
+    <string name="home">Главная</string>
+    <string name="shop">Магазин</string>
+    <string name="my_health">Мое здоровье</string>
+</resources>

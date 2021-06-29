@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_house"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/shop"
+        android:icon="@drawable/ic_shoppingcartsimple"
+        android:title="@string/shop"/>
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/ic_calendarblank"
+        android:title="Календарь"/>
+    <item
+        android:id="@+id/myHealth"
+        android:icon="@drawable/ic_heartbeat"
+        android:title="@string/my_health"/>
+
+</menu>
