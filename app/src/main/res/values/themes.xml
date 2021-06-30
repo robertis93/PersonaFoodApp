@@ -18,6 +18,23 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">16sp</item>
     </style>
+
+    <style name="Text.Toolbar">
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style>
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="Text.Test">
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:fontFamily">@font/gilroy_black</item>
+    </style>
     <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/black</item>
         <item name="android:textColorSecondary">@color/black</item>

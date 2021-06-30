@@ -3,9 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/myToolbar"
     android:layout_width="match_parent"
-    app:title="Hi, Oleg!"
     app:navigationIcon="@drawable/ic_user"
     app:menu="@menu/toolbar_menu"
-    android:layout_height="?attr/actionBarSize">
+    android:layout_height="?attr/actionBarSize"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp"
+
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, Oleg!"
+        android:id="@+id/toolbar_tittle"
+        style="@style/Text.Toolbar"
+        android:layout_marginTop="10dp" />
 
 </com.google.android.material.appbar.MaterialToolbar>

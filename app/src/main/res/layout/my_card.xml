@@ -17,7 +17,6 @@
 
         <TextView
             android:id="@+id/textView"
-            style="@style/Text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -33,11 +32,23 @@
 
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="Депозит"
+            android:textColor="@color/light60"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/black_rectangle" />
+
+        <TextView
             android:id="@+id/black_rectangle"
             android:layout_width="382dp"
             android:layout_height="192dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/radious_black"
             android:fontFamily="@font/gilroy_semibold"
@@ -45,6 +56,7 @@
             android:textColor="@color/dark"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -263,8 +275,23 @@
             app:layout_constraintStart_toStartOf="@+id/black_rectangle" />
 
         <TextView
+            android:id="@+id/texDeposit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="56dp"
+            android:fontFamily="@font/gilroy_semibold"
+            android:text="Депозит"
+            android:textColor="@color/light60"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/black_rectangle" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/gilroy_medium"
             android:text="₽"

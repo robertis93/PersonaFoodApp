@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:layout_marginTop="32dp"
     android:gravity="center"
-    android:layout_marginTop="32dp">
+    android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView"
@@ -29,17 +29,31 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:background="@drawable/radious_image"
             android:src="@drawable/group_sales"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+
+        <ImageView
+            android:id="@+id/spring_dots_indicator"
+            android:layout_width="87dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="329dp"
+            android:src="@mipmap/viewpager_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

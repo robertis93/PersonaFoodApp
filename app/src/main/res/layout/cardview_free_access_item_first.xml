@@ -8,7 +8,8 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_margin="5dp"
-    app:cardCornerRadius="20dp"
+    android:layout_marginStart="16dp"
+    app:cardCornerRadius="8dp"
     app:cardElevation="5dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,41 +21,42 @@
 
 
         <TextView
-            android:layout_width="120dp"
+            android:id="@+id/textView6"
+            android:layout_width="128dp"
             android:layout_height="120dp"
+            android:background="@drawable/radious_textview"
             android:fontFamily="@font/gilroy_semibold"
-            android:textSize="15sp"
             android:textColor="@color/dark"
-            android:background="@color/dark_very_light"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"/>
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginBottom="42dp"
             android:src="@drawable/meal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/gilroy_semibold"
-            android:textSize="15sp"
-            android:textColor="@color/dark"
-            android:background="@color/dark_very_light"
             android:layout_marginStart="8dp"
-
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="14dp"
+            android:background="@color/dark_very_light"
+            android:fontFamily="@font/gilroy_semibold"
+
             android:text="План питания \n на неделю"
+            android:textColor="@color/dark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
